@@ -1,0 +1,168 @@
+{{template "static/_includes/header.html"}}
+
+<section id="banner">
+  <div class="container">
+    <div id="logo"></div>
+    <div id="title"></div>
+    <div id="navigation">
+      <label id="open" for="toggle">menu</label>
+      <input type="checkbox" id="toggle">
+      <div id="killswitch"></div>
+      <nav id="mobile">
+        <header><span>Navigation</span><label id="close" for="toggle">close</label></header>
+        <ul>
+          <li>
+            <label for="toggle-gs">Getting started</label>
+            <input type="checkbox" id="toggle-gs">
+            <nav id="mobile-gs">
+              <header>Getting started<label for="toggle-gs">back</label></header>
+              <ul>
+                <li><a href="">Hello World</a></li>
+                <li><a href="">First Controller</a></li>
+                <li><a href="">Rendering Templates</a></li>
+                <li><a href="">Forms and Validation</a></li>
+                <li><a href="">Middleware</a></li>
+                <li><a href="">Examples</a></li>
+              </ul>
+            </nav>
+          </li>
+          <li>
+            <label for="toggle-ref">Reference</label>
+            <input type="checkbox" id="toggle-ref">
+            <nav id="mobile-ref">
+              <header>Reference<label for="toggle-ref">back</label></header>
+              <ul>
+                <li><a href="">Configuration</a></li>
+                <li><a href="">Router</a></li>
+                <li><a href="">Templates</a></li>
+                <li><a href="">Validation</a></li>
+                <li><a href="">Middleware</a></li>
+                <li><a href="">Hooks</a></li>
+                <li><a href="">Secure Cookie</a></li>
+              </ul>
+            </nav>
+          </li>
+          <li>
+            <label for="toggle-dl">Downloads</label>
+            <input type="checkbox" id="toggle-dl">
+            <nav id="mobile-dl">
+              <header>Downloads<label for="toggle-dl">back</label></header>
+              <ul>
+                <li><a href="https://github.com/tsurai/jantar/archive/master.tar.gz">master (.tar.gz)</a></li>
+                <li><a href="https://github.com/tsurai/jantar/archive/master.tzip">master (.zip)</a></li>
+                <li><a href="">stable v0.8 (.tar.gz)</a></li>
+                <li><a href="">stable v0.8 (.zip)</a></li>
+                <li><a href="https://github.com/tsurai/jantar">fork on github</a></li>
+              </ul>
+            </nav>
+          </li>
+        </ul>
+      </nav>
+      <nav id="desktop">
+        <div style="margin-left: 78px;">
+          <header>Getting started</header>
+          <ul>
+            <li><a href="">Hello World</a></li>
+            <li><a href="">First Controller</a></li>
+            <li><a href="">Rendering Templates</a></li>
+            <li><a href="">Forms and Validation</a></li>
+            <li><a href="">Middleware</a></li>
+            <li><a href="">Examples</a></li>
+          </ul>
+        </div>
+        <div style="margin-left: 23px;">
+          <header>Reference</header>
+          <ul>
+            <li><a href="">Configuration</a></li>
+            <li><a href="">Router</a></li>
+            <li><a href="">Templates</a></li>
+            <li><a href="">Validation</a></li>
+            <li><a href="">Middleware</a></li>
+            <li><a href="">Hooks</a></li>
+            <li><a href="">Secure Cookie</a></li>
+          </ul>
+        </div>
+        <div class="clearfix" style="margin-left: 37px;">
+          <header>Downloads</header>
+          <ul>
+            <li><a href="https://github.com/tsurai/jantar/archive/master.tar.gz">master (.tar.gz)</a></li>
+            <li><a href="https://github.com/tsurai/jantar/archive/master.tzip">master (.zip)</a></li>
+            <li><a href="">stable v0.8 (.tar.gz)</a></li>
+            <li><a href="">stable v0.8 (.zip)</a></li>
+            <li><a href="https://github.com/tsurai/jantar">fork on github</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</section>
+<section id="features">
+  <div class="container">
+    <div class="thumb clearfix">
+      <header>
+        <span id="octocat"></span>
+        <h3>Truly open source</h3>
+      </header>
+      <p>Powered by Github Jantar is completly free and open source. Feel free to clone, fork, 
+contribute, watch  and star.<br>
+The MIT Licence fully embraces the open source spirit and gives developer the 
+freedom they need and deserve.</p>
+    </div>
+    <div class="thumb clearfix">
+      <header>
+        <span id="gears"></span>
+        <h3>Light but sane</h3>
+      </header>
+      <ul>
+        <li>RESTful pattern with protection against cross-site request forgery</li>
+        <li>Secure default settings for TLS</li>
+        <li>Safe default HTTP header</li>
+        <li>Encrypted and signed cookies using  AES256 and HMAC(SHA256)</li>
+        <li>Compatible with http.HandlerFunc</li>
+      </ul>
+    </div>
+    <div class="thumb clearfix">
+      <header>
+        <span id="heart"></span>
+        <h3>Built with love</h3>
+      </header>
+      <p>Jantar is a passion project by a single person. Without deadlines Jantar can grow gracefully and evolve with changing needs and requirements.<br>
+While trying to stay light, the main focus is on security, stability and performance.</p>
+    </div>
+  </div>
+</section>
+<header class="security">
+  <h2>More security by default</h2>
+  <h3>Nowadays security is the most crucial aspect of the World Wide Web.<br>Frameworks should take responsibility and offer protection against the most common vulnerabilities right out of the box</h3>
+</header>
+<section class="security">
+  <div class="clearfix" style="position:relative; width:600px; margin-left:auto; margin-right:auto;">
+    <span id="lock"><h2>SSL/TLS</h2></span>
+    <div class="info-container">
+    <div class="infobox">
+      <h2>No SSL</h2>
+      <p>SSL 2.0 is broken in many ways and should never be used. Even SSL 3.0, while being better than 2.0 cannot be validated
+      under FIPS 140-2 because of its weak key derivation process.<br>
+      That's why Jantar only accepts TLS 1.0 or higher.</p>
+    </div>
+    <div class="infobox">
+      <h2>Strong prefered cipher</h2>
+      <p>Jantar provides strong prefered cipher by default to provide the best possible protection possible.<br>
+      Some example cipher are:<br>
+      <ul>
+        <li>ECDHE ECDSA with AES-256 GCM SHA-384</li>
+        <li>ECDHE RSA with AES-256 GCM SHA-384</li>
+        <li>RSA with AES-256 CBC SHA-256</li>
+        <li>RSA with AES-128 CBC SHA-256</li>
+      </ul></p>
+    </div>
+    <div class="infobox">
+      <h2>Responsive to critical bugs</h2>
+      <p>Some bugs like Heartbleed are so critical that they require immediate actions taken. Jantar is always up to date and
+      will warn you about any unusual events that need your attention.</p>
+    </div>
+    </div>
+  </div>
+</section>
+
+{{template "static/_includes/footer.html"}}
